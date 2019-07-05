@@ -1,0 +1,955 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>John Irwin Resume</title>
+
+    <style>
+
+        .panel-title
+        {
+            font-size: medium;
+        }
+
+        .title-with-logo
+        {
+            height:40px;
+            line-height:40px;
+        }
+
+        .panel-title
+        {
+            font-weight:bold;
+        }
+
+        .employerLogo
+        {
+            vertical-align:middle;
+            float:right;
+            height:40px;
+        }
+
+        .panel
+        {
+            border: none;
+            box-shadow: none;
+        }
+
+        .specialty
+        {
+            font-size: medium;
+        }
+
+        .skill
+        {
+            background: lightblue;
+            padding: 2px 10px 2px 10px;
+        }
+
+        .skillsList
+        {
+            line-height: 1.8;
+        }
+
+        .subheading
+        {
+            display:block;
+            font-size:medium;
+            margin: 10px 0px 10px 0px;
+        }
+    
+        .glyphicon-zero-star-rating:before
+        {
+            content:"";
+            float:left;
+        }
+
+        .glyphicon-zero-star-rating:after
+        {
+            content:"\e007 \e007 \e007 \e007 \e007";
+            opacity: 0.5;
+        }
+
+        .glyphicon-one-star-rating:before
+        {
+            content:"\e006";
+            float:left;
+        }
+
+        .glyphicon-one-star-rating:after
+        {
+            content:"\e007 \e007 \e007 \e007";
+            opacity: 0.5;
+        }
+
+        .glyphicon-two-star-rating:before
+        {
+            content:"\e006 \e006";
+            float:left;
+        }
+
+        .glyphicon-two-star-rating:after
+        {
+            content:"\e007 \e007 \e007";
+            opacity: 0.5;
+        }
+
+        .glyphicon-three-star-rating:before
+        {
+            content:"\e006 \e006 \e006";
+            float:left;
+        }
+
+        .glyphicon-three-star-rating:after
+        {
+            content:"\e007 \e007";
+            opacity: 0.5;
+        }
+
+        .glyphicon-four-star-rating:before
+        {
+            content:"\e006 \e006 \e006 \e006";
+            float:left;
+        }
+
+        .glyphicon-four-star-rating:after
+        {
+            content:"\e007";
+            opacity: 0.5;
+        }
+
+        .glyphicon-five-star-rating:before
+        {
+            content:"\e006 \e006 \e006 \e006 \e006";
+            float:left;
+        }
+
+        .glyphicon-five-star-rating:after
+        {
+            content:"";
+            opacity: 0.5;
+        }
+
+        .ability-title
+        {
+            display:inline-block;
+            color:black;
+            width:95px;
+        }
+
+        .ability-score
+        {
+            color:royalblue;
+            letter-spacing: 2px;
+        }
+
+		.alert-center-overlay
+		{
+			position: fixed;	
+            left: 50%;
+            top: 50%;
+            width: 36em;
+            height: 3em;
+			margin-left: -18em;
+			margin-top: -1.5em;
+			font-size: 125%;
+			text-align: center;
+		}
+    </style>
+
+</head>
+
+<body>
+	<div id="clickToSeeMoreAlert" class="alert alert-success alert-center-overlay">
+		Click on company names and job titles to see more details.
+		<button type="button" class="close" data-dismiss="alert">x</button>
+	</div>
+
+    <div class="container">
+        <center><h1>John Irwin</h1></center>
+        <center><span class="specialty">Software Engineer / Technical Lead</span></center>
+        <p />
+        <center>Syracuse, N.Y.</center>
+        <center><a href="mailto:johnirwinengineer@gmail.com" title="Email John Irwin">johnirwinengineer@gmail.com</a></center>
+        <center><a href="tel:3156636056" title="Call John Irwin">315.663.6056</a></center>
+        <center><a href="http://www.johnirwin.net/" title="Go to John Irwin's web page">http://www.johnirwin.net/</a></center>
+
+        <div class="panel-group" id="accordion">
+
+            <!-- SUMMARY -->
+            <br />
+            <br />
+            <p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Summary</h3>
+                    </div>
+                    <br />
+                    Innovative and versatile software engineer with expertise in software architecture, design, and project management.
+                    <div class="panel-body">
+                        <ul>
+                            <li>Broad technical knowledge of hardware/software platforms, languages, and technologies</li>
+                            <li>The ability to rapidly comprehend customer requirements and create effective solutions</li>
+                            <li>Experienced in the full software development lifecycle, from concept to delivery</li>
+                            <li>Sprint planning and iterative development in an Agile programming environment</li>
+                            <li>Strong communication and interpersonal skills</li>
+                            <li>Experience with FDA 21CFR part 820 QSR, IEC 60601-1 standards, ISO standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </p>
+
+            <!-- CBORD -->
+            <br />
+            <p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title title-with-logo">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#cbordCoPanel" title="Click for more details">
+                                2016 – 2017 &nbsp;&nbsp; The CBORD Group, Inc., Ithaca, NY
+                                <img src="../resources/logos/CBORDLogo.png" class="employerLogo" />
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="cbordCoPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            The CBORD Group, Inc.
+                            <br />
+                            950 Danby Road, Suite 100C
+                            <br />
+                            Ithaca, NY 14850
+                            <br />
+                            <a href="tel:8444622673" title="Call CBORD">844.462.2673</a>
+                            <br />
+                            <a href="http://www.cbord.com/" title="Go to CBORD's web page">http://www.cbord.com/</a>
+                            <br />
+                            <br />
+                            CBORD delivers access, card, foodservice, housing, and nutrition management systems for healthcare, higher education, and business campuses.
+                        </div>
+                    </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#cbordSrSwEngPanel" title="Click for more details">
+                        <h4>Senior Software Engineer – Clinical Team (2016 – 2017)</h4>
+                    </a>
+                    Full-stack developer responsible for the design and implementation of CBORD’s Net Nutrition Service Suite,
+                    a suite of software as a service (SaaS) web applications used to manage food services in a hospital setting.
+                    <div id="cbordSrSwEngPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            The Net Nutrition Service Suite supports: menu planning, meal selections, tray tracking, and patient
+							nutrition. The solution interfaces with hospital admit-discharge-transfer (ADT) and diet order systems,
+							and integrates industry standard nutrition databases, to allow accurate reporting of patient nutrition,
+							and allow user to be alerted when meal selections do not comply with a patient’s diet orders or food
+							allergies. The following technologies were used within an Agile/Scrum methodology: ASP.NET/MVC,
+							C#, HTML5, CSS, JavaScript, TypeScript, jQuery, Kendo UI, SQL Server, and Rally. Responsible for:
+                            <ul>
+                                <li>Design and implementation of multi-tier web application features</li>
+                                <li>Development of automated unit tests (used in continuous integration builds)</li>
+                                <li>Authoring wiki-pages within a developer knowledgebase</li>
+                                <li>Participate in agile backlog grooming and sprint planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+            <!-- WELCH ALLYN -->
+            <p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title title-with-logo">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#welchAllynCoPanel" title="Click for more details">
+                                2006 – 2015 &nbsp;&nbsp; Welch Allyn Inc., Skaneateles, NY
+                                <img src="../resources/logos/WelchAllynLogo.png" class="employerLogo" />
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="welchAllynCoPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <br/>
+                            Welch Allyn Corporation
+                            <br />
+                            4341 State Street Road
+                            <br />
+                            Skaneateles Falls, NY 13153
+                            <br />
+                            <a href="tel:8005356663" title="Call Welch Allyn">1.800.535.6663</a>
+                            <br />
+                            <a href="http://www.welchallyn.com/" title="Go to Welch Allyn's web page">http://www.welchallyn.com/</a>
+                            <br />
+                            <br />
+                            Welch Allyn is a leading global manufacturer of medical diagnostic equipment with a wide range of connected solutions. Since inventing the first direct-illuminating, hand-held ophthalmoscope in 1915, they have enjoyed steady growth by expanding their traditional position into electronic and connected product categories like continuous patient monitoring, automated vital signs capture and diagnostic cardiology. Their continued advancements make accessing patient information faster, more accurate and more efficient.
+                        </div>
+                    </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#welchAllynLeadEngPanel" title="Click for more details">
+                        <h4>Lead Software Engineer – Software Architecture, R & D (2011 – 2015)</h4>
+                    </a>
+                    Software architect on the Connex Clinical Surveillance System.
+                    <div id="welchAllynLeadEngPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            The Connex Clinical Surveillance System allows clinicians to centrally monitor patients on a medical/surgical hospital floor by combining real-time continuous patient monitoring with episodic spot-check vitals in a single unified presentation.  Connex is a service-oriented architecture (SOA) using the Microsoft technology stack, including:  .NET, C#, WPF, WCF, MEF, and SQL Server.  Responsible for:
+                            <ul>
+                                <li>Software architecture definition and documentation</li>
+                                <li>Design of system interfaces, including device to system interface</li>
+                                <li>Creation of proof-of-concept software and formal design guidance</li>
+                                <li>Safety classification of product and software modules (per IEC 62304)</li>
+                                <li>Insuring that designs are compliant with FDA and international regulations</li>
+                                <li>Key participant in:  project requirements development, failure mode analysis, risk analysis, and change control board reviews</li>
+                                <li>Mentoring development team members</li>
+                            </ul>
+                            Software architect and requirements analyst for update to Cardio-Pulmonary Workstation product (resting ECG and spirometry testing).  Responsible for:
+                            <ul>
+                                <li>Development of software requirements specifications</li>
+                                <li>Software architecture definition and documentation</li>
+                                <li>Apply architecture tradeoff analysis method (ATAM) to evaluate architecture alternatives</li>
+                                <li>Creation of proof-of-concept software, and formal design guidance</li>
+                                <li>Definition of EMR application programming interface (API)</li>
+                            </ul>
+                            Software architect for sustaining effort on the Welch Allyn Service Software Suite.
+                            <ul>
+                                <li>Analyzed the existing product software and complied a set of proposed improvements along with cost/benefit analysis.  Led development team and stakeholders to prioritize the proposals and initiate efforts on high priority items.</li>
+                                <li>Developed a framework to perform Behavior Driven Development (BDD) testing of Service Tool components using SpecFlow with scenarios described in Gherkin, to support automation of the plug-in unit testing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#welchAllynSrEngPanel" title="Click for more details">
+                        <h4>Senior Software Engineer – Project Manager/Architect, R & D (2006 – 2010)</h4>
+                    </a>
+                    Software architect and contributor for the Connex platform and Connex Electronic Vital Documentation System.  Project manager, architect, and contributor to Welch Allyn Enterprise Integration Engine.
+                    <div id="welchAllynSrEngPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            The Connex Electronic Vital Documentation System allows patient vitals data to be wirelessly delivered devices at the patient's bedside directly into the patient record in a hospital’s Electronic Medical Record (EMR).  Connex is a service-oriented architecture (SOA) using the Microsoft technology stack, including:  .NET, C#, WPF, WCF, MEF, and SQL Server.  Responsible for:
+                            <ul>
+                                <li>Software architecture definition and documentation</li>
+                                <li>Design of system interfaces, including device to system interface</li>
+                                <li>Creation of proof-of-concept software and formal design guidance</li>
+                                <li>Insuring that designs are compliant with FDA and international regulations</li>
+                                <li>Development of coding standards, conducting design and code reviews</li>
+                                <li>Key participant in:  project requirements development, failure mode analysis, risk analysis, and change control board reviews</li>
+                                <li>Key influencer for:  the adoption of scrum agile development methodology, automated nightly builds, automated testing</li>
+                                <li>Mentoring development team members</li>
+                            </ul>
+                            The Welch Allyn Enterprise Integration Engine provides HL7 integration between Welch Allyn solutions and electronic medical record systems (EMR).  Responsible for:
+                            <ul>
+                                <li>Architecture definition and documentation</li>
+                                <li>Project scheduling and resource planning</li>
+                                <li>Periodic progress and status reviews with product stakeholders</li>
+                                <li>Contributor to product and test software</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+            <!-- ZCO -->
+            <br />
+            <p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title title-with-logo">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#zcoCoPanel" title="Click for more details">
+                                2004 – 2005 &nbsp;&nbsp; Zco Corporation, Hudson, NH
+                                <img src="../resources/logos/ZcoLogo.png" class="employerLogo" />
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="zcoCoPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Zco Corporation
+                            <br />
+                            58 Technology Way, Suite 2W10
+                            <br />
+                            Nashua, NH 03060
+                            <br />
+                            <a href="tel:6038819200" title="Call Zco">603.881.9200</a>
+                            <br />
+                            <a href="http://www.zco.com/" title="Go to Zco's web page">http://www.zco.com/</a>
+                            <br />
+                            <br />
+                            Zco is a custom software development company located in the greater Boston area in Nashua, NH (with off-shore development resources), specializing in mobile app development, enterprise software, and 3D animation.
+                        </div>
+                    </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#zcoProjMgrPanel" title="Click for more details">
+                        <h4>Project Manager/Designer, Commercial Software Division</h4>
+                    </a>
+                    Project manager for various complex software development projects for the aerospace, medical, and financial services industries.
+                    <div id="zcoProjMgrPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Languages and tools used include MS Word, Visio, MS Project, C#/.NET, VB, C++,.  Responsible for:
+                            <ul>
+                                <li>Interfacing with clients to determine project requirements and scope</li>
+                                <li>Writing technical proposals, design specifications, prototypes, UI wireframes</li>
+                                <li>Tracking and reporting project status</li>
+                                <li>Developing and enforcing coding standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+            <!-- NVIDIA -->
+            <br />
+            <p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title title-with-logo">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#nvidiaCoPanel" title="Click for more details">
+                                2001 – 2002 &nbsp;&nbsp; nVidia Corporation, Inc., Santa Clara, CA
+                                <img src="../resources/logos/nVidiaLogo.png" class="employerLogo" />
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div id="nvidiaCoPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            nVIDIA Corporation
+                            <br/>
+                            2701 San Tomas Expressway
+                            <br />
+                            Santa Clara, CA 95050
+                            <br />
+                            <a href="tel:4084862000" title="Call nVIDIA">408.486.2000</a>
+                            <br />
+                            <a href="http://www.nvidia.com/" title="Go to nVIDIA's web page">http://www.nvidia.com/</a>
+                            <br />
+                            <br />
+                            NVIDIA is the world leader in visual computing. Beginning as a standard PC graphics chip company, NVIDIA has transformed into a specialized platform company that targets four very large markets — Gaming, Professional Visualization, Datacenter and Auto — where visual computing is essential and deeply valued.
+                        </div>
+                    </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#nvidiaStaffEngPanel" title="Click for more details">
+                        <h4>Staff Engineer, Architecture Group</h4>
+                    </a>
+                    Designer/programmer for simulation and testing.
+                    <div id="nvidiaStaffEngPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Coding done in C/C++, MFC, XML, Perl.  Accomplishments include:
+                            <ul>
+                                <li>Designed and implemented an object-oriented test environment used for verification of the display engine.  This environment facilitated the creation of randomized tests yielding greater test coverage.</li>
+                                <li>Designed and implemented a GUI interface and communication layer for a DX8 DDI/DP2 tracing utility using MFC and DCOM, allowing remote configuration and control of the tracing utility while running full-screen 3D applications.</li>
+                                <li>Instrumented the DX8 reference rasterizer to capture the primitive graphics data of applications and benchmarks for replay against hardware simulators for functionality and performance testing.</li>
+                                <li>Created object-oriented XML parser for data sets which were too large to fit in memory all at once.</li>
+                                <li>Wrote and modified Perl scripts to run automated tests and create reports.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+            <!-- 3DFX -->
+            <br />
+            <p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title title-with-logo">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#tdfxCoPanel" title="Click for more details">
+                                1998 – 2000 &nbsp;&nbsp; 3Dfx Interactive, Inc., San Jose, CA
+                                <img src="../resources/logos/TdfxLogo.png" class="employerLogo" />
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="tdfxCoPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            3Dfx Interactive
+                            <br/>
+                            <br />
+                            3dfx Interactive was a company headquartered in San Jose, California, founded in 1994, that specialized in the manufacturing of 3D graphics processing units, and later, graphics cards. It was a pioneer in the field from the late 1990s until 2000.
+                            <br />
+                            <br />
+                            The company's flagship product was the Voodoo Graphics, an add-in card that accelerated 3D graphics. The hardware accelerated only 3D rendering, relying on the PC's current video card for 2D support. Despite this limitation, the Voodoo Graphics and its follow-up Voodoo2 were popular, and it became standard for 3D games to offer support for the company's Glide API.
+                            <br />
+                            <br />
+                            3dfx’s assets were acquired by nVIDIA (mostly for intellectual property rights) in December 2000.
+                        </div>
+                    </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#tdfxSrStaffEngPanel" title="Click for more details">
+                        <h4>Senior Staff Engineer, Hardware Engineering</h4>
+                    </a>
+                    Key designer/programmer for performance simulation.
+                    <div id="tdfxSrStaffEngPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Coding done in C/C++.  Accomplishments include:
+                            <ul>
+                                <li>Designed and implemented routines for a DX8 graphics driver to translated pixel shader byte code into the hardware register writes required to setup the hardware’s texture pipeline stages.</li>
+                                <li>Implemented several performance enhancements to the scan conversion section of the C-model simulation of new 3D graphics hardware, increasing the efficiency of the graphics pipeline.</li>
+                                <li>Designed and implemented a data flow analysis class library which was used to create performance simulations and data analysis tools.</li>
+                                <li>Implemented several diagnostic and benchmark programs.</li>
+                                <li>Ran performance tests and analyzed and presented results.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+            <!-- PROGRESS SOFTWARE -->
+            <br />
+            <p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title title-with-logo">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#progressCoPanel" title="Click for more details">
+                                1992 – 1998 &nbsp;&nbsp; Progress Software Corporation, Nashua, NH
+                                <img src="../resources/logos/ProgressLogo.png" class="employerLogo" />
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div id="progressCoPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Progress Software Corporation
+                            <br/>
+                            14 Oak Park Drive
+                            <br />
+                            Bedford, MA 01730
+                            <br />
+                            <a href="tel:7812804000" title="Call Progress Software">781.280.4000</a>
+                            <br />
+                            <a href="http://www.progress.com/" title="Go to Proress Software's web page">http://www.progress.com/</a>
+                            <br />
+                            <br />
+                            Progress Software developed a 4th-generation language and integrated multi-user relational database management system in 1981.  Since then, Progress Software has been committed to delivering market-leading software innovations that empower partners and customers to dramatically improve the development, deployment, integration and management of their business applications.  Their innovations are used by nearly 140,000 organizations in more than 180 countries, including 88% of the Fortune 100.
+                        </div>
+                    </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#progressSrEngDBPanel" title="Click for more details">
+                        <h4>Senior Software Engineer, Database Engineering (1997 – 1998)</h4>
+                    </a>
+                    Team leader/designer/programmer for new database products.
+                    <div id="progressSrEngDBPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Coding was done in Java, and C/C++; Project tracking performed with MS Project; Presentations created with MS Power Point.
+                            <ul>
+                                <li>Team leader/contributor on product that performs brokering and database server functions for SQL and 4GL database client applications.</li>
+                                <li>Member (and later leader) of a team implementing a prototype of an OODB/Relational database system based on Java object model.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <a data-toggle="collapse" data-parent="#accordion" href="#progressSrEngCrescentPanel" title="Click for more details">
+                        <h4>Senior Software Engineer, Crescent Division (1995 – 1997)</h4>
+                    </a>
+                    Designer/programmer on several Visual Basic Add-On products.
+                    <div id="progressSrEngCrescentPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Coding was done in C++ and Smalltalk.
+                            <ul>
+                                <li>Implemented OLE objects/controls to support a variety of functions including: array operations, NT security management, and customizable data control.</li>
+                                <li>Contributed to Visual Basic compiler.</li>
+                                <li>Created a comprehensive test suite to test the correctness of a Visual Basic compiler.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <a data-toggle="collapse" data-parent="#accordion" href="#progressSrEngTechPanel" title="Click for more details">
+                        <h4>Senior Software Engineer, Technology Group (1993 – 1994)</h4>
+                    </a>
+                    Key designer/programmer for database client/server product.
+                    <div id="progressSrEngTechPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            All coding was done in C.
+                            <ul>
+                                <li>Modified 4GL database Windows client to operate with AS/400 database server.</li>
+                                <li>Implemented enhancements and bug fixes to AS/400 database server.</li>
+                                <li>Assisted in the implementation of ODBC interface for HP-3000.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+            <!-- SKILLS -->
+            <br />
+            <p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Skills</h3>
+                    </div>
+                </div>
+
+                <span class="subheading">Languages, Markup, Notation and Protocols</span>
+
+                <div class="row">
+
+                    <!-- Column 1 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">C#</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">JavaScript</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">TypeScript</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Java</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">C/C++</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 2 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">Visual Basic</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">HTML</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">CSS</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">JSON</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">XML</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 3 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">XAML</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">REST</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">SOAP</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">HL7</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">FHIR</span>
+                                <span class="ability-score glyphicon glyphicon-two-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- End of Column -->
+
+                </div> <!-- End of Row -->
+
+                <span class="subheading">Frameworks and Services</span>
+
+                <div class="row">
+
+                    <!-- Column 1 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">.NET</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">ASP.NET</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">JQuery</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Bootstrap</span>
+                                <span class="ability-score glyphicon glyphicon-two-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">LINQ</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 2 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">WPF</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">WCF</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">MEF</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">WF</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">SpecFlow</span>
+                                <span class="ability-score glyphicon glyphicon-two-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 3 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">DirectX / D3D</span>
+                                <span class="ability-score glyphicon glyphicon-two-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">OpenGL</span>
+                                <span class="ability-score glyphicon glyphicon-two-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- End of Column -->
+
+                </div> <!-- End of Row -->
+
+                <span class="subheading">Databases and Data Access</span>
+
+                <div class="row">
+
+                    <!-- Column 1 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">SQL Server</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Entity FW</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 2 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">ODBC</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">ADO</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 3 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">BrightstarDB</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">SQL Anywhere</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- End of Column -->
+
+                </div> <!-- End of Row -->
+
+                <span class="subheading">Methodologies and Design Patterns</span>
+
+                <div class="row">
+
+                    <!-- Column 1 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">Agile</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Scrum</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Waterfall</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Stage Gate</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 2 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">SOA</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">MVC</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">MVVM</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">UML</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 3 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">FDA Controls</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">ATAM</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">TDD / BDD</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Gherkin</span>
+                                <span class="ability-score glyphicon glyphicon-two-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- End of Column -->
+
+                </div> <!-- End of Row -->
+
+                <span class="subheading">Tools and Environments</span>
+
+                <div class="row">
+
+                    <!-- Column 1 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">Visual Studio</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">TFS</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">MS Project</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Android Studio</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Perforce</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 2 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">Visio</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Word</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Excel</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">PowerPoint</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">SharePoint</span>
+                                <span class="ability-score glyphicon glyphicon-four-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- end of column -->
+
+                    <!-- Column 3 -->
+                    <div class="col-sm-4">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <span class="ability-title">Windows</span>
+                                <span class="ability-score glyphicon glyphicon-five-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Android</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Linux / Unix</span>
+                                <span class="ability-score glyphicon glyphicon-three-star-rating" />
+                            </li>
+                            <li>
+                                <span class="ability-title">Azure</span>
+                                <span class="ability-score glyphicon glyphicon-two-star-rating" />
+                            </li>
+                        </ul>
+                    </div> <!-- End of Column -->
+
+                </div> <!-- End of Row -->
+            </p>
+
+    <!-- EDUCATION -->
+    <br />
+    <br />
+    <p>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Education</h3>
+            </div>
+            <br />
+            Bachelor’s Degree in Computer Science, State University College at Oswego, Oswego, New York
+        </div>
+    </p>
+    <br />
+    <br />
+    </div>
+    </div>
+    <script>
+		$(document).ready (function()
+		{
+			// Show alert for 3 seconds after the page loads
+			$("#clickToSeeMoreAlert").fadeTo(3000, 500).slideUp(500, function()
+			{
+				$("#clickToSeeMoreAlert").slideUp(500);
+			});   
+		});
+	</script>
+</body>
+
+</html>
