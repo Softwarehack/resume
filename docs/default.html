@@ -8,26 +8,63 @@
             padding: 0;
             width:  100%; 
             height: 100%; 
+            background-color: black;
         }
         
         canvas {                  /* To remove the scrollbars */
-            width: 100%;
-            height: 100%; 
+            position: absolute;
+            z-index: 1;
+            width: inherit;
+            height: inherit; 
             overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: auto;
+            height: auto;
+            padding:20px 20px 20px 20px;
+            z-index: 2;
+            background-color:#ffffD8
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <table border="0">
-        <tr>
-            <td><input type="Button" value="Add Ico" onclick="shapes.push(shapeFactory.createIco())"></td>
-            <td><input type="Button" value="Add Tetra" onclick="shapes.push(shapeFactory.createTetra())"></td>
-            <td><input type="Button" value="Add Cube" onclick="shapes.push(shapeFactory.createCube())"></td>
-            <td><input type="Button" value=" Undo " onclick="shapes.pop()"></td>
-        </tr>
-    </table>
-
-    <canvas id="drawingCanvas" width="100" height="100"></canvas>
+    <canvas id="drawingCanvas"></canvas>
+    <div class="overlay" style="font-size:large">
+        <div>
+            <a href="http://www.linkedin.com/in/JohnIrwinEngineer" >
+                <img src="../resources/photos/johnirwinphoto.png" width="120" height="120" style="float:left; clear:right; vertical-align:middle;" />
+                <span style="font-size:80px; color:black; margin-left:20px; vertical-align:middle;">John Irwin</span>
+                <img src="../resources/logos/linkedinlogo.png" width="80" height="20" style="vertical-align:middle; margin-left:20px;" />
+            </a>
+        </div>
+        <div style="clear:both; margin-top:40px;">
+            <span>
+                Innovative and versatile software engineer with expertise in software architecture, design, and project management.
+            </span>
+            <ul>
+                <li>Broad technical knowledge of hardwre/software platforms, languages, and technologies</li>
+                <li>The ability to rapidly comprehend customer requirements and create effective solutions</li>
+                <li>Experience in the full software development lifecycle, from concept to delivery</li>
+                <li>Sprint planning and iterative development in an Agile programming environment</li>
+                <li>Strong communication and interpersonal skills</li>
+                <li>Experience with FDA 21CFR part 820 QSR, IEC 60601-1 standards, ISO standards</li>
+            </ul>
+            <div style="margin-top:40px">
+                <a href="johnIrwinResume.html">Click here to view my resume on-line.</a>
+				<br/>
+				<br/>
+                <a href="../resources/pdfs/John Irwin Resume.pdf" download="John Irwin Resume.pdf">Click here to view my resume (in PDF format).</a>
+            </div>
+        </div>
+    </div>
 
     <script>
 
@@ -51,8 +88,38 @@
         // Kick off the animation process...
         animate(shapes, canvas, context);
 
+        shapes.push(shapeFactory.createIco());
+        var iterationCount = 0;
+        var shapeIndex = 0;
+
         // animate() -- animate each shape one "step" by stepping them one step and then drawing them.
         function animate(shapes, canvas, context) {
+        
+            // Every so manu iterations vary the shapes for interest...
+            iterationCount++;
+
+            if (iterationCount >= 2500) {
+                while (shapes.length > 0) {
+                    shapes.pop();
+                }
+                iterationCount = 0;
+            }
+
+            if ((iterationCount % 500) == 0) {
+
+                // Add another shape...
+                shapeIndex++;
+                if (shapeIndex > 2) shapeIndex = 0;
+                switch (shapeIndex)
+                {
+                    case 0 : shapes.push(shapeFactory.createIco());
+                        break;
+                    case 1 : shapes.push(shapeFactory.createCube());
+                        break;
+                    case 2 : shapes.push(shapeFactory.createTetra());
+                        break;
+                }
+            }
 
             // Clear the previous animation frame.
             context.clearRect(0, 0, canvas.width, canvas.height);
@@ -80,8 +147,8 @@
 
         // resizeCanvas() -- invoked when the window is resized so that we can resize the canvas to fit.
         function resizeCanvas() {
-            canvas.width = window.innerWidth - 15;
-            canvas.height = window.innerHeight - 50;
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
             // We don't bother redrawing here (like we might normally do) because
             // that will be done automatically on the next animation frame.
         }
@@ -128,13 +195,13 @@
             this.faceColors = ['red', 'yellow', 'darkorange', 'yellow', 'green', 'blue', 'magenta', 'aqua', 'chartreuse', 'cyan'];
 
             // Setup a rotation matrix for a random speed (small angle) of rotation.
-            this.rotationMatrix = multiplyMatrices( createRotationMatrix('x', ((Math.random() * 3 + 1) * Math.PI / 180)),
-                                                    createRotationMatrix('y', ((Math.random() * 3 + 1) * Math.PI / 180))
+            this.rotationMatrix = multiplyMatrices( createRotationMatrix('x', ((Math.random() * 3 + 2) * Math.PI / 180)),
+                                                    createRotationMatrix('y', ((Math.random() * 3 + 2) * Math.PI / 180))
                                                     );
 
             // Setup the x & y increments for a random speed/tragetory.
-            this.xInc = (Math.random() * 4) + 1.0;
-            this.yInc = (Math.random() * 4) + 1.0;
+            this.xInc = (Math.random() * 4 + 2) + 1.0;
+            this.yInc = (Math.random() * 4 + 2) + 1.0;
 
             // step() -- moves the shape one "step" of rotation and translation.
             this.step = function () {
