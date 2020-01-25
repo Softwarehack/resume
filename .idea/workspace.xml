@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6c38cb8-cd64-4667-a69a-a19b9c128465" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/logos/SaabTechnologiesLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/johnIrwinResume.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/johnIrwinResume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pdfs/John Irwin Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pdfs/John Irwin Resume.pdf" afterDir="false" />
-    </list>
+    <list default="true" id="a6c38cb8-cd64-4667-a69a-a19b9c128465" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +48,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -187,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562378894907</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Saab experience.">
+      <created>1564398205060</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1564398205060</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add Saab experience.">
+      <created>1564398293925</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564398293925</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -221,6 +231,32 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding html files and resources." />
     <MESSAGE value="Changing main html dir to &quot;docs&quot;." />
@@ -228,7 +264,8 @@
     <MESSAGE value="Fixed links." />
     <MESSAGE value="Fixed relative links." />
     <MESSAGE value="Change dir structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change dir structure." />
+    <MESSAGE value="Add Saab experience." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Saab experience." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
