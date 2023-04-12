@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6c38cb8-cd64-4667-a69a-a19b9c128465" name="Default Changelist" comment="Updated with most recent experience.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/johnIrwinResume.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/johnIrwinResume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pdfs/John Irwin Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pdfs/John Irwin Resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/photos/johnirwinphoto.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/photos/johnirwinphoto.png" afterDir="false" />
-    </list>
+    <list default="true" id="a6c38cb8-cd64-4667-a69a-a19b9c128465" name="Default Changelist" comment="Updated with most recent experience." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579977971597</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated with most recent experience.">
+      <created>1681297154508</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681297154508</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
